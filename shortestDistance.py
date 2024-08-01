@@ -1,7 +1,5 @@
 import heapq
-import time
-
-   
+import time 
 # using heap data structure
 class shortestDistance:
     def findShortestDistance(points:list[list[int]], topk:int):
