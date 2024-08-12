@@ -1,10 +1,10 @@
 
 # this is the game to my kids to paly Rock Paper Scissors
-from enum import Enum
+from enum import IntEnum
 from random import randrange
 
 
-class option(Enum):
+class option(IntEnum):
     ROCK=1
     PAPER=2
     SCISSORS=3
@@ -16,9 +16,9 @@ def play():
     if (UserSelection==systemselection):
         print("Tie")
         return
-    if((UserSelection==option.ROCK and systemselection==option.SCISSORS) or 
-    (UserSelection==option.PAPER and systemselection==option.ROCK) or
-    (UserSelection==option.SCISSORS and systemselection==option.PAPER)):
+    if((UserSelection==option.ROCK.value and systemselection==option.SCISSORS.value) or 
+    (UserSelection==option.PAPER.value and systemselection==option.ROCK.value) or
+    (UserSelection==option.SCISSORS.value and systemselection==option.PAPER.value)):
         print("You Won")
     else:
         print("System Won")
