@@ -28,6 +28,13 @@ if __name__ == "__main__":
     while wanttoplay==True:
         play()
         wonp=str(input("do you want to contineu (Y/N) "))
-        if(wonp in ["N", "n", "No", "no", "nO", "NO"] ):
+        if(wonp in ["n", "no"] ):
             wanttoplay = False
+        elif(wonp in ["y", "yes"] ):
+            wanttoplay = True
+        else:
+            print("Invalid oputput")
+
+            wonp=str(input("do you want to contineu (Y/N) ")).lower
+    
              
